@@ -402,8 +402,6 @@ This website has been designed with:
 - **Conversion focus** - Forms for lead generation
 - **Brand consistency** - BAPS Shayona and Nativ Farms
 
-The site is ready for content population and deployment. Good luck with the launch! 🎉
-
 ---
 
 **BAPS Shayona Ltd**  

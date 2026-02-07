@@ -488,6 +488,14 @@ body {
     height: auto;
 }
 
+.about-image-photo {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
 /* ================================
    Testimonials
    ================================ */

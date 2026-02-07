@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - BAPS Shayona</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="logo-placeholder.svg" alt="BAPS Shayona Logo" class="logo-img">
+                    <div class="logo-text">
+                        <h1>BAPS Shayona</h1>
+                        <p class="tagline">Serving community with Love</p>
+                    </div>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="services.html" class="nav-link">Our Services</a></li>
+                    <li><a href="brands.html" class="nav-link">Our Brands</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">We'd love to hear from you</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div>
+                            <h4>Address</h4>
+                            <p>230 Aldington Road<br>Kemps Creek NSW 2178<br>Australia</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@bapsshayona.com.au">info@bapsshayona.com.au</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>Coming Soon</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">🕒</div>
+                        <div>
+                            <h4>Opening Hours</h4>
+                            <p>Monday - Sunday: 9:00 AM - 8:00 PM</p>
+                        </div>
+                    </div>
+
+                    <!-- Map Placeholder -->
+                    <div class="map-container">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#e8f5e9"/>
+                            <path d="M100 150 L150 100 L200 150 L250 100 L300 150" stroke="#2d5016" stroke-width="2" fill="none" opacity="0.3"/>
+                            <circle cx="200" cy="150" r="40" fill="#d32f2f" opacity="0.7"/>
+                            <path d="M200 130 Q190 150 200 170 Q210 150 200 130" fill="#fff"/>
+                            <text x="200" y="230" text-anchor="middle" font-size="14" fill="#2d5016">230 Aldington Road, Kemps Creek</text>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Contact Forms -->
+                <div class="contact-forms">
+                    <!-- Form Tabs -->
+                    <div class="form-tabs">
+                        <button class="form-tab active" data-form="general">General Enquiry</button>
+                        <button class="form-tab" data-form="catering">Catering Request</button>
+                        <button class="form-tab" data-form="venue">Venue Hire</button>
+                    </div>
+
+                    <!-- General Enquiry Form -->
+                    <form id="general-form" class="contact-form active">
+                        <h3>General Enquiry</h3>
+                        <div class="form-group">
+                            <label for="gen-name">Name *</label>
+                            <input type="text" id="gen-name" name="name" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="gen-email">Email *</label>
+                                <input type="email" id="gen-email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="gen-phone">Phone</label>
+                                <input type="tel" id="gen-phone" name="phone">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="gen-subject">Subject</label>
+                            <input type="text" id="gen-subject" name="subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="gen-message">Message *</label>
+                            <textarea id="gen-message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+
+                    <!-- Catering Request Form -->
+                    <form id="catering-form" class="contact-form">
+                        <h3>Catering Request</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="cat-name">Name *</label>
+                                <input type="text" id="cat-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cat-email">Email *</label>
+                                <input type="email" id="cat-email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="cat-phone">Phone *</label>
+                                <input type="tel" id="cat-phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cat-date">Event Date *</label>
+                                <input type="date" id="cat-date" name="event_date" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="cat-guests">Number of Guests *</label>
+                                <input type="number" id="cat-guests" name="guests" min="1" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cat-event-type">Event Type *</label>
+                                <select id="cat-event-type" name="event_type" required>
+                                    <option value="">Select event type</option>
+                                    <option value="wedding">Wedding</option>
+                                    <option value="corporate">Corporate Event</option>
+                                    <option value="birthday">Birthday Party</option>
+                                    <option value="religious">Religious Ceremony</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cat-venue">Venue Location</label>
+                            <input type="text" id="cat-venue" name="venue" placeholder="Where is the event?">
+                        </div>
+                        <div class="form-group">
+                            <label for="cat-dietary">Dietary Requirements</label>
+                            <textarea id="cat-dietary" name="dietary" rows="2" placeholder="Any specific dietary needs or preferences?"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="cat-details">Additional Details</label>
+                            <textarea id="cat-details" name="details" rows="4" placeholder="Tell us more about your catering needs..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Request Quote</button>
+                    </form>
+
+                    <!-- Venue Hire Form -->
+                    <form id="venue-form" class="contact-form">
+                        <h3>Event Hall Hire</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="ven-name">Name *</label>
+                                <input type="text" id="ven-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="ven-email">Email *</label>
+                                <input type="email" id="ven-email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="ven-phone">Phone *</label>
+                                <input type="tel" id="ven-phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="ven-date">Event Date *</label>
+                                <input type="date" id="ven-date" name="event_date" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="ven-time">Event Time *</label>
+                                <input type="time" id="ven-time" name="event_time" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="ven-duration">Duration (hours) *</label>
+                                <input type="number" id="ven-duration" name="duration" min="1" max="24" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="ven-guests">Number of Guests *</label>
+                                <input type="number" id="ven-guests" name="guests" min="1" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="ven-event-type">Event Type *</label>
+                                <select id="ven-event-type" name="event_type" required>
+                                    <option value="">Select event type</option>
+                                    <option value="wedding">Wedding Reception</option>
+                                    <option value="engagement">Engagement</option>
+                                    <option value="birthday">Birthday Celebration</option>
+                                    <option value="corporate">Corporate Event</option>
+                                    <option value="religious">Religious Function</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" name="catering" value="yes">
+                                I'm interested in catering services as well
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="ven-requirements">Special Requirements</label>
+                            <textarea id="ven-requirements" name="requirements" rows="4" placeholder="Audio/visual equipment, decoration, seating arrangements, etc."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Request Booking</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>BAPS Shayona Ltd</h4>
+                    <p class="footer-tagline">Serving community with Love</p>
+                    <p>Pure Vegetarian • No Onion • No Garlic</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="brands.html">Our Brands</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>230 Aldington Road<br>Kemps Creek NSW 2178</p>
+                    <p>Email: info@bapsshayona.com.au</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 BAPS Shayona Ltd. All rights reserved. | ABN: 13 647 509 439</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

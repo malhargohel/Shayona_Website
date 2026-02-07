@@ -1,0 +1,29 @@
+<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d5016;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6b8e23;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer circle -->
+  <circle cx="40" cy="40" r="38" fill="url(#logoGradient)" opacity="0.1"/>
+  
+  <!-- Inner design - Lotus inspired -->
+  <path d="M40 15 Q30 25 25 35 Q35 30 40 30 Q45 30 55 35 Q50 25 40 15" fill="#2d5016" opacity="0.3"/>
+  <path d="M40 25 Q35 30 32 37 Q36 34 40 34 Q44 34 48 37 Q45 30 40 25" fill="#2d5016" opacity="0.5"/>
+  
+  <!-- Center circle -->
+  <circle cx="40" cy="40" r="20" fill="none" stroke="#2d5016" stroke-width="2" opacity="0.6"/>
+  <circle cx="40" cy="40" r="15" fill="#fff" opacity="0.8"/>
+  
+  <!-- Traditional pattern -->
+  <circle cx="40" cy="40" r="8" fill="#2d5016" opacity="0.4"/>
+  <circle cx="40" cy="40" r="4" fill="#ff9933" opacity="0.8"/>
+  
+  <!-- Bottom leaves -->
+  <path d="M40 45 Q30 50 25 60 Q35 55 40 55 Q45 55 55 60 Q50 50 40 45" fill="#2d5016" opacity="0.2"/>
+  
+  <!-- Text indicator -->
+  <text x="40" y="72" text-anchor="middle" font-size="8" fill="#2d5016" font-weight="bold" font-family="Arial">BAPS</text>
+</svg>
